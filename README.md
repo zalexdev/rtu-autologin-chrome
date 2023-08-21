@@ -12,6 +12,21 @@ Features:
 
 - Material Design: A sleek and intuitive design ensures you have the best user experience.
 
+# How to isntall?
+1. Go to [chrome://extensions/](chrome://extensions/)
+2. Download latest release from [release page](https://github.com/zalexdev/rtu-autologin-chrome/releases)
+3. Unzip main.zip file
+
+![enter image description here](https://github.com/zalexdev/rtu-autologin-chrome/blob/main/howToInstall/howto1.png?raw=true)
+
+4. Enable developer mode
+
+![enter image description here](https://github.com/zalexdev/rtu-autologin-chrome/blob/main/howToInstall/howto2.png?raw=true)
+
+5. Click load unpacked extension and select path to unzipped files
+6. Setup your login and password
+7. Turn on the switch
+8. All done!
 # How to Use?
 
   ![enter image description here](https://github.com/zalexdev/rtu-autologin-chrome/blob/main/mainscreen.jpg?raw=true)
