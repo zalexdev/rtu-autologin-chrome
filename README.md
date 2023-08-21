@@ -46,4 +46,4 @@ Features:
 - Simplify your RTU portal experience. Install RTU Login Automation today!
 
 # ⚠️Warning
-This is not official exstension for RTU website. Install this exstension only from this guthub page!
+This is not official exstension for RTU website. Install this exstension only from this github page!
