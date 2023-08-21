@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTU Login Automation Popup</title>
+    <style>
+        body {
+            width: 200px;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            border-radius: 10px;  
+            overflow: hidden;     
+
+        }
+    
+        .material-input {
+            position: relative;
+            margin-bottom: 20px;
+        }
+    
+        .material-input input {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #333;
+            background-color: transparent;
+            transition: border-color 0.3s;
+        }
+    
+        .material-input input:focus {
+            outline: none;
+            border-bottom-color: #26a69a; 
+        }
+    
+        .material-input label {
+            position: absolute;
+            top: 11px;
+            left: 0;
+            color: #757575;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+    
+        .material-input input:valid + label, 
+        .material-input input:focus + label {
+            top: -10px;
+            left: 0;
+            font-size: 12px;
+            color: #26a69a; 
+        }
+    
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3; 
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .center-icon {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .center-icon img {
+            width: 48px;
+            height: 48px;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="center-icon">
+        <img src="icon.png" alt="RTU Icon">
+    </div>
+    
+    <div class="title">RTU Autologin v1.0</div>
+    
+    <div class="material-input">
+        <input type="text" id="loginInput" required>
+        <label for="loginInput">Login</label>
+    </div>
+    
+    <div class="material-input">
+        <input type="password" id="passwordInput" required>
+        <label for="passwordInput">Password</label>
+    </div>
+    
+    <label class="switch">
+        <input type="checkbox" id="toggleLogin">
+        <span class="slider"></span>
+    </label>
+
+    </br>
+
+    <p>Developed because the RTU couldn't...</p>
+
+    </br>
+
+    <p>Non official extension...</p>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

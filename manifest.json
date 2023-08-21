@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "RTU Login Automation",
+    "version": "1.0",
+    "description": "Automate login for RTU",
+    "permissions": ["activeTab", "storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://id2.rtu.lv/openam/UI/Login*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "icon.png"
+        }
+    },
+    "icons": {
+        "128": "icon.png"
+    }
+}
